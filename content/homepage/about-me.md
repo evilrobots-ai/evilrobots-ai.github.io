@@ -8,4 +8,4 @@ header_menu: true
 
 ##### evilrobots.ai
 
-evilrobots® is a robotics start-up based in Sydney, Australia.
+evil robots ® supplies custom parts and components for robotics, and is based in Sydney, Australia.

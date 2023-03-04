@@ -10,12 +10,14 @@ defaultContentLanguage = "en"
 theme = "hugo-scroll"
 
 # The "title" of your website
-title = "evilrobots.ai -- robotics and costom components"
+title = "Evil Robots -- robotics and custom components"
+
+
 
 [params]
     # A "copyright"-line to be added at the bottom of the page.
     # Hint: Markdown is supported in here as well. So you may e.g. add a link to your legal imprint-page.
-    copyright = "© evilrobots.ai &nbsp; · &nbsp; evilrobots ® is a registered trademark"
+    copyright = "© evilrobots.ai &nbsp; · &nbsp; evil&nbsp;robots ® is a registered trademark"
 
     # The "description" of your website. This is used in the meta data of your generated html.
     description = "robotics and custom components"
@@ -32,7 +34,9 @@ title = "evilrobots.ai -- robotics and costom components"
     # Another "title" :-). This one is used as the site_name on the Hugo's internal
     # opengraph structured data template.
     # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-    title = "evilrobots.ai -- robotics and custom components"
+    title = "Evil Robots -- robotics and custom components"
+
+    
 
     # This theme will, by default, inject a design-by-line at the bottom of the page.
     # You can turn it off, but we would really appreciate if you don’t :-)

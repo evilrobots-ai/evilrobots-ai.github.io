@@ -5,6 +5,6 @@ header_menu: true
 ---
 
 If you need custom parts for your robots, contact us with your plans.
-We sell custom components, and help with CNC machining and 3d printing.
+We sell custom components, and help with CNC machining, 3d printing, and software.
 
 
