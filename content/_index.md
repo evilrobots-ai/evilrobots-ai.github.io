@@ -1,6 +1,7 @@
 ---
-header_logo: "images/evilrobots-single-orange75.png"
-header_image: "images/k3lpie-a1-plan.png"
-header_headline: "EVIL ROBOTS"
-header_subheadline: "What if it works?"
+title: 'Home'
+date: 2023-05-09T14:26:44+10:00
+heroHeading: 'evil robots'
+heroSubHeading: 'What if it works?'
+heroBackground: 'images/k3lpie-a1-plan.png'
 ---

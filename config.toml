@@ -1,46 +1,53 @@
-baseURL = "https://evilrobots.ai"
+baseURL = "https://evilrobots.ai/"
 publishdir = "docs"
+languageCode = "en-au"
+title = "evil robots pty ltd"
+themesDir = "themes"
+theme = "hugo-hero-theme"
 
-# This is a "one page"-website, so we do not need these kinds of pages...
-disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT"]
-
-defaultContentLanguage = "en"
-
-# The name of this wonderful theme ;-).
-theme = "hugo-scroll"
-
-# The "title" of your website
-title = "evil robots pty ltd -- robotics r&d"
-
-
-
-[params]
-    # A "copyright"-line to be added at the bottom of the page.
-    # Hint: Markdown is supported in here as well. So you may e.g. add a link to your legal imprint-page.
-    copyright = "© evil robots pty ltd &nbsp; · &nbsp; evil&nbsp;robots ® is a registered trademark"
-
-    # The "description" of your website. This is used in the meta data of your generated html.
-    description = "robotics and custom components"
-
-    # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
-    favicon = "images/favicon.png"
-
-    # These "images" are used for the structured data templates. This will show up, when
-    # services like Twitter or Slack want to generate a preview of a link to your site.
-    # See https://gohugo.io/templates/internal#twitter-cards and
-    # https://gohugo.io/templates/internal#open-graph.
-    images = ["images/cover-image.jpg"]
-
-    # Another "title" :-). This one is used as the site_name on the Hugo's internal
-    # opengraph structured data template.
-    # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-    title = "Evil Robots -- robotics and custom components"
-
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.92.0"
     
+[params]
+  google_analytics_id=""
 
-    # This theme will, by default, inject a design-by-line at the bottom of the page.
-    # You can turn it off, but we would really appreciate if you don’t :-)
-    # hidedesignbyline = true
+  [params.logo]
+    mobile = "images/er-logo-transparent-300x46.png"
+    mobile_height = "46px"
+    mobile_width = "300px"
+    desktop = "images/er-logo-transparent-300x46.png"
+    desktop_height = "46px"
+    desktop_width = "300px"
+    alt = "evil robots"
 
-    [params.meta]
-        keywords = "robotics, quadruped, cnc, milling, 3d printing, custom, humanoid"
+  [params.homepage_meta_tags]
+    meta_description = "evil robots pty ltd is a robotics r&d company based in Sydney, Australia."
+    meta_og_title = "evil robots pty ltd"
+    meta_og_type = "website"
+    meta_og_url = "https://evilrobots.ai/"
+    meta_og_image = "https://raw.githubusercontent.com/evilrobots-ai/evilrobots-ai.github.io/main/static/images/k3lpie-detail.jpg"
+    meta_og_description = "evil robots pty ltd is a robotics r&d company based in Sydney, Australia."
+    meta_twitter_card = "summary"
+    meta_twitter_site = "@evilrobotsAI"
+    meta_twitter_creator = "@evilrobotsAI"
+
+[[menu.main]]
+	name = "Services"
+	url = "/services/"
+    weight = 1
+
+[[menu.main]]
+    name = "Merch"
+    url = "https://evilrobots.myspreadshop.com.au/"
+    weight = 3
+
+[[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  pages = "/:filename/"
