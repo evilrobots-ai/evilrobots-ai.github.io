@@ -1,0 +1,13 @@
+email: 'hello@evilrobots.ai'
+businessName: 'evil robots pty ltd'
+address: |
+  PO Box 201
+  Berowra Heights, NSW 2082
+  Australia
+hours:
+  - day: Monday - Friday
+    open: 9:00am
+    close: 5:00pm
+  - day: Saturday - Sunday
+    open: Closed
+    close:
