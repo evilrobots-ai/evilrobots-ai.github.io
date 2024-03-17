@@ -1,5 +1,0 @@
-baseURL = 'https://evilrobots.ai/'
-languageCode = 'en-us'
-publishdir = "docs"
-title = "evil robots pty ltd"
-themesDir = "themes"
