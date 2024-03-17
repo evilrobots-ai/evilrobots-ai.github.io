@@ -1,0 +1,68 @@
+baseURL = "https://evilrobots.ai"
+languageCode = "en-us"
+title = "evil robots pty ltd"
+themesDir = "themes"
+theme = "ananke"
+publishdir = "docs"
+
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[languages]
+  [languages.en]
+    title = "evil robots"
+    weight = 1
+    contentDir = "content/en"
+    # languageDirection = 'rtl' for Right-To-Left languages
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  text_color = ""
+  author = ""
+  favicon = "favicon.png"
+  site_logo = "/images/er-logo-transparent-inv-300x46.png"
+  description = ""
+  recent_copy = "What we do"
+  # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-black"
+  recent_posts_number = 3
+
+  body_classes = "montserrat bg-near-white"
+  custom_css = ["video.css"]
+
+[[params.links]]
+  url = "/contact"
+  description = "Contact us"
+
+[[params.links]]
+  url = "/privacy"
+  description = "Privacy Policy"
+
+[[params.links]]
+  url = "/conditions"
+  description = "Terms and Conditions"
+
+[[params.links]]
+  description = "evil robots ® is a registered trademark"
+
+[[params.links]]
+  description = "ABN 21667313911"
+
+[[params.ananke_socials]]
+name = "twitter"
+url = "https://twitter.com/evilrobotsAI"
+
+[[params.ananke_socials]]
+name = "github"
+url = "https://github.com/evilrobots-ai"
+
+[[params.ananke_socials]]
+name = "linkedin"
+url = "https://www.linkedin.com/company/evilrobots/"

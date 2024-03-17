@@ -1,0 +1,17 @@
+<footer class="{{ .Site.Params.background_color_class | default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+    <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .Site.Home.Permalink }}" >
+    &copy; <span class="logo">{{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} </span>{{ now.Format "2006"}} {{ end }}
+    </a>
+    {{ range .Site.Params.links }}
+      {{ if .url }}
+        <div>
+          <a class="f5 fw4 hover-white no-underline white-70 dn dib-ns pv3 ph3" href="{{ .url }}">{{ .description }}</a>
+        </div>
+      {{ else }}
+        <div class="f5 fw4 white-70 dn dib-ns pv3 ph3">{{ .description }}</div>
+      {{ end }}  
+    {{ end }}  
+    <div>{{ partial "social-follow.html" . }}</div>
+  </div>
+</footer>
