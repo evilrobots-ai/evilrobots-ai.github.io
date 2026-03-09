@@ -1,0 +1,56 @@
+{{/*
+  Override the theme helper to avoid piping concatenated CSS back through
+  resources.ToCSS, which breaks on recent Hugo versions when the resource
+  is already plain CSS.
+*/}}
+{{ $mainStyle := dict }}
+{{ $assetsToConcat := slice }}
+
+{{ range slice "_tachyons.css" "_code.css" "_hugo-internal-templates.css" "_social-icons.css" "_styles.css" }}
+  {{ with partialCached "func/style/GetResource" . . }}
+    {{ $assetsToConcat = $assetsToConcat | append . }}
+  {{ end }}
+{{ end }}
+
+{{ with partialCached "func/socials/Get" "socials/Get" }}
+  {{ $socialRules := slice }}
+  {{ range $service := . }}
+    {{ with .color }}
+      {{ $rule := printf `
+        .ananke-socials a.%s:hover {
+          color: %s
+        }` $service.name $service.color }}
+      {{ $socialRules = $socialRules | append $rule }}
+    {{ end }}
+  {{ end }}
+  {{ with $socialRules }}
+    {{ $socialCSS := (delimit . "") | resources.FromString "ananke/css/generated_socials.css" }}
+    {{ $assetsToConcat = $assetsToConcat | append $socialCSS }}
+  {{ end }}
+{{ end }}
+
+{{ with site.Params.custom_css }}
+  {{ range . }}
+    {{ with partialCached "func/style/GetResource" . . }}
+      {{ if in (slice "x-scss" "x-sass" "scss" "sass") .MediaType.SubType }}
+        {{ if hugo.IsExtended }}
+          {{ $assetsToConcat = $assetsToConcat | append (. | resources.ToCSS) }}
+        {{ else }}
+          {{ partial "func/warn" (printf "Processing of stylesheet %s of type %s has been skipped. You need Hugo Extended to process such files." .Name .MediaType.SubType) }}
+        {{ end }}
+      {{ else }}
+        {{ $assetsToConcat = $assetsToConcat | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ with $assetsToConcat }}
+  {{ $style := . | resources.Concat "ananke/css/main.css" | minify }}
+  {{ if eq (getenv "HUGO_ENV") "production" }}
+    {{ $style = $style | fingerprint }}
+  {{ end }}
+  {{ $mainStyle = $style }}
+{{ end }}
+
+{{ return $mainStyle }}

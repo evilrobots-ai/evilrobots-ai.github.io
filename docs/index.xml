@@ -1,40 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Innovate. Cultivate. Grow. on evil robots</title>
-    <link>https://evilrobots.ai/</link>
-    <description>Recent content in Innovate. Cultivate. Grow. on evil robots</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 17 Mar 2024 00:00:01 +1000</lastBuildDate>
-    <atom:link href="https://evilrobots.ai/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Our approach</title>
-      <link>https://evilrobots.ai/post/approach/</link>
-      <pubDate>Sun, 17 Mar 2024 00:00:01 +1000</pubDate>
-      <guid>https://evilrobots.ai/post/approach/</guid>
-      <description>We have a clear vision: to harness the power of cutting-edge technology to solve the critical challenges facing modern agriculture. By focusing on customised solutions, we ensure a seamless integration of our technologies into existing agricultural practices, enabling our clients to achieve higher productivity, sustainability, and resilience.</description>
-    </item>
-    <item>
-      <title>What we offer</title>
-      <link>https://evilrobots.ai/post/offerings/</link>
-      <pubDate>Sun, 17 Mar 2024 00:00:00 +1000</pubDate>
-      <guid>https://evilrobots.ai/post/offerings/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Bespoke Solutions for horticulture&lt;/strong&gt;: Central to our offerings are tailored robotic and IoT solutions designed to elevate the potential of vertical farming and horticulture. Our technologies are crafted to address specific agricultural challenges, from enhancing crop yield to optimising resource use.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;R&amp;amp;D and RaaS&lt;/strong&gt;: We provide a comprehensive suite of services for those looking to integrate our technology into their operations. This includes direct acquisition of our custom solutions and a flexible Robotics-as-a-Service (RaaS) model, both supported by our expert guidance and maintenance.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Custom IoT Development&lt;/strong&gt;: Beyond our agricultural focus, we possess the capability to develop custom IoT solutions. This area, while not our primary focus, demonstrates our versatility and commitment to leveraging technology for broader applications, offering scalable and adaptable solutions that meet diverse needs.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://evilrobots.ai/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://evilrobots.ai/about/</guid>
-      <description>In the heart of innovation, where technology meets the toil of the earth, lies the unconventional spirit of Evil Robots. Our name is a playful paradox that defies the stereotype of robots in society. Far from nefarious, Evil Robots embodies a drive to challenge the status quo of agricultural robotics.&#xA;The &amp;rsquo;evil&amp;rsquo; in our name is a tongue-in-cheek nod to the rebellion against the traditional perception of farming. It speaks to our commitment to disrupting the ordinary, not with malice, but with robotics designed to simplify your operations.</description>
-    </item>
-    <item>
-      <title>Contact</title>
-      <link>https://evilrobots.ai/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://evilrobots.ai/contact/</guid>
-      <description>We&amp;rsquo;d love to hear from you! Whether you have questions about our innovative solutions, need assistance with your current systems, or simply want to share your thoughts on the future of agriculture and robotics, your insights are invaluable to us. Fill out the form below, and one of our team members will get back to you as soon as possible.&#xA;Your Name Email Address An email address is required. Message </description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Innovate. Cultivate. Grow. on evil robots</title><link>https://evilrobots.ai/</link><description>Recent content in Innovate. Cultivate. Grow. on evil robots</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 17 Mar 2024 00:00:01 +1000</lastBuildDate><atom:link href="https://evilrobots.ai/index.xml" rel="self" type="application/rss+xml"/><item><title>Our approach</title><link>https://evilrobots.ai/post/approach/</link><pubDate>Sun, 17 Mar 2024 00:00:01 +1000</pubDate><guid>https://evilrobots.ai/post/approach/</guid><description>&lt;p&gt;We have a clear vision: to harness the power of cutting-edge technology to solve the critical challenges facing modern agriculture. By focusing on customised solutions, we ensure a seamless integration of our technologies into existing agricultural practices, enabling our clients to achieve higher productivity, sustainability, and resilience.&lt;/p&gt;</description></item><item><title>What we offer</title><link>https://evilrobots.ai/post/offerings/</link><pubDate>Sun, 17 Mar 2024 00:00:00 +1000</pubDate><guid>https://evilrobots.ai/post/offerings/</guid><description>&lt;p&gt;&lt;strong&gt;Bespoke Solutions for horticulture&lt;/strong&gt;: Central to our offerings are tailored robotic and IoT solutions designed to elevate the potential of vertical farming and horticulture. Our technologies are crafted to address specific agricultural challenges, from enhancing crop yield to optimising resource use.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;R&amp;amp;D and RaaS&lt;/strong&gt;: We provide a comprehensive suite of services for those looking to integrate our technology into their operations. This includes direct acquisition of our custom solutions and a flexible Robotics-as-a-Service (RaaS) model, both supported by our expert guidance and maintenance.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Custom IoT Development&lt;/strong&gt;: Beyond our agricultural focus, we possess the capability to develop custom IoT solutions. This area, while not our primary focus, demonstrates our versatility and commitment to leveraging technology for broader applications, offering scalable and adaptable solutions that meet diverse needs.&lt;/p&gt;</description></item><item><title>About</title><link>https://evilrobots.ai/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://evilrobots.ai/about/</guid><description>&lt;p&gt;In the heart of innovation, where technology meets the toil of the earth, lies the unconventional spirit of Evil Robots. Our name is a playful paradox that defies the stereotype of robots in society. Far from nefarious, Evil Robots embodies a drive to challenge the status quo of agricultural robotics.&lt;/p&gt;
+&lt;p&gt;The &amp;rsquo;evil&amp;rsquo; in our name is a tongue-in-cheek nod to the rebellion against the traditional perception of farming. It speaks to our commitment to disrupting the ordinary, not with malice, but with robotics designed to simplify your operations. We chose a name that would not only stand out in the field but also reflect our mission to tackle the challenges faced by modern agriculture, making the complex straightforward for farmers everywhere.&lt;/p&gt;</description></item><item><title>Contact</title><link>https://evilrobots.ai/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://evilrobots.ai/contact/</guid><description>&lt;p&gt;We&amp;rsquo;d love to hear from you! Whether you have questions about our innovative solutions, need assistance with your current systems, or simply want to share your thoughts on the future of agriculture and robotics, your insights are invaluable to us. Fill out the form below, and one of our team members will get back to you as soon as possible.&lt;/p&gt;
+
+
+
+&lt;form class="black-80 sans-serif" accept-charset="UTF-8" action="https://formspree.io/f/xdoqlopo" method="POST" role="form"&gt;
+
+ &lt;label class="f6 b db mb1 mt3 sans-serif mid-gray" for="name"&gt;Your Name&lt;/label&gt;
+ &lt;input type="text" id="name" name="name" class="w-100 f5 pv3 ph3 bg-light-gray bn" required placeholder=" " aria-labelledby="name"/&gt;
+
+ &lt;label class="f6 b db mb1 mt3 sans-serif mid-gray" for="email"&gt;Email Address&lt;/label&gt;
+ &lt;input type="email" id="email" name="email" class="w-100 f5 pv3 ph3 bg-light-gray bn" required placeholder=" " aria-labelledby="email"/&gt;
+ &lt;div class="requirements f6 gray glow i ph3 overflow-hidden"&gt;
+ An email address is required.
+ &lt;/div&gt;
+
+ &lt;label class="f6 b db mb1 mt3 sans-serif mid-gray" for="message"&gt;Message&lt;/label&gt;
+ &lt;textarea id="message" name="message" class="w-100 f5 pv3 ph3 bg-light-gray bn h4" aria-labelledby="message"&gt;&lt;/textarea&gt;
+
+ &lt;input class="db w-100 mv2 white pa3 bn hover-shadow hover-bg-black bg-animate bg-black" type="submit" value="Send" /&gt;
+
+&lt;/form&gt;</description></item><item><title>Privacy Policy</title><link>https://evilrobots.ai/privacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://evilrobots.ai/privacy/</guid><description>&lt;p&gt;evil robots pty ltd is committed to providing quality services to you and this policy outlines our ongoing obligations to you in respect of how we manage your Personal Information.&lt;/p&gt;
+&lt;p&gt;We have adopted the Australian Privacy Principles (APPs) contained in the Privacy Act 1988 (Cth) (the Privacy Act). The APPs govern the way in which we collect, use, disclose, store, secure and dispose of your Personal Information. A copy of the Australian Privacy Principles may be obtained from the website of The Office of the Australian Information Commissioner at &lt;a href="https://www.oaic.gov.au/"&gt;https://www.oaic.gov.au/&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Terms and Conditions</title><link>https://evilrobots.ai/conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://evilrobots.ai/conditions/</guid><description>&lt;p&gt;Please read these terms of use (&amp;ldquo;terms&amp;rdquo;, &amp;ldquo;Terms of Use&amp;rdquo;) carefully before using the evilrobots.ai website (the &amp;ldquo;service&amp;rdquo;) operated by evil robots pty ltd (&amp;ldquo;us&amp;rdquo;, &amp;ldquo;we&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;).&lt;/p&gt;
+&lt;p&gt;Your access to and use of the service is conditioned on your acceptance of and compliance with these terms. These terms apply to all visitors, users and others who access or use the service.&lt;/p&gt;
+&lt;h2 id="acceptance-of-our-terms"&gt;Acceptance of our terms&lt;/h2&gt;
+&lt;p&gt;By accessing or using the website you agree to be bound by the following terms. If you disagree with any part of the terms then you may not access the service.&lt;/p&gt;</description></item></channel></rss>

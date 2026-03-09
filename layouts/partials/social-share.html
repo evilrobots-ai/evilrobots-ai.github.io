@@ -1,0 +1,21 @@
+{{ if not ($.Param "disable_share") }}
+  {{ $title := .Title }}
+  {{ $url := printf "%s" .Permalink | absLangURL }}
+  {{ $hrefs := dict
+    "facebook" (printf "https://www.facebook.com/sharer.php?u=%s" $url)
+    "twitter" (printf "https://twitter.com/intent/tweet?url=%s&text=%s" $url $title)
+    "linkedin" (printf "https://www.linkedin.com/shareArticle?mini=true&url=%s&title=%s" $url $title)
+  }}
+  {{ $services := where (partialCached "func/socials/Get" "socials/Get") "share" true }}
+  <div id="sharing" class="mt3 ananke-socials">
+    {{ range $service := $services }}
+      {{ with index $hrefs .name }}
+        <a href="{{ . }}" class="ananke-social-link {{ $service.name }} no-underline" aria-label="share on {{ $service.label }}">
+          {{ with $service.icon }}
+            <span class="icon">{{ . }}</span>
+          {{ end }}
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}
