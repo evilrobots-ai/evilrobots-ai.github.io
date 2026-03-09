@@ -1,5 +1,7 @@
 # evilrobots.ai
 
+[![CI](https://github.com/evilrobots-ai/evilrobots-ai.github.io/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/evilrobots-ai/evilrobots-ai.github.io/actions/workflows/ci.yml)
+
 This repository contains the Hugo source for [evilrobots.ai](https://evilrobots.ai).
 
 ## Theme setup
