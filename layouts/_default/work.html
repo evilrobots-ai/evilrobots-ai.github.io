@@ -1,0 +1,49 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
+
+{{ define "main" }}
+  <div class="site-main">
+    <section class="section">
+      <div class="section__inner showcase-stack">
+        <article class="showcase-row">
+          <div class="showcase-row__copy">
+            <p class="section__eyebrow">blackbot</p>
+            <h2>the flight recorder for robots</h2>
+            <p>Incidents, recordings, and detail for robots and connected machines.</p>
+            <div class="button-row">
+              <a class="button button--primary" href="/blackbot/">see blackbot</a>
+            </div>
+          </div>
+          <figure class="visual-frame visual-frame--screenshot showcase-row__visual">
+            <img src="/images/blackbot-overview.png" alt="blackbot overview with incidents, reporting robots, and linked recordings." />
+            <figcaption>Overview of incidents, reporting robots, and linked recordings.</figcaption>
+          </figure>
+        </article>
+
+        <article class="showcase-row showcase-row--reverse">
+          <div class="showcase-row__copy">
+            <p class="section__eyebrow">connected hardware</p>
+            <h2>selected systems for real use</h2>
+            <p>Designed and built sensing systems for research and applied environments where reliability matters.</p>
+          </div>
+          <figure class="visual-frame showcase-row__visual">
+            <span class="visual-badge">to be updated</span>
+            <img src="/images/connected-hardware-placeholder.svg" alt="Placeholder hardware close-up for connected devices." />
+            <figcaption>Placeholder hardware close-up, to be updated with real photography.</figcaption>
+          </figure>
+        </article>
+
+        <article class="showcase-row">
+          <div class="showcase-row__copy">
+            <p class="section__eyebrow">protected-cropping direction</p>
+            <h2>modular systems in development</h2>
+            <p>Modular hardware direction in development for useful work around plants.</p>
+          </div>
+          <figure class="visual-frame visual-frame--photo showcase-row__visual">
+            <img src="/images/croppo-v19.1.jpg" alt="Render of an Evil Robots protected-cropping machine." />
+            <figcaption>Current direction render.</figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+  </div>
+{{ end }}

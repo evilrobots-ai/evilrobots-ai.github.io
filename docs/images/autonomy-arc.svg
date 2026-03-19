@@ -1,0 +1,31 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="820" rx="36" fill="#0B0D10"/>
+  <rect x="52" y="52" width="1096" height="716" rx="28" fill="#111316"/>
+  <text x="104" y="132" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="34" font-weight="700">system arc</text>
+  <text x="104" y="168" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">machines, records, incidents, and changes joined in one operational story</text>
+
+  <rect x="108" y="244" width="238" height="284" rx="26" fill="#14181C"/>
+  <rect x="178" y="324" width="98" height="92" rx="16" fill="#D4D4D4"/>
+  <circle cx="200" cy="442" r="18" fill="#0098D2"/>
+  <circle cx="254" cy="442" r="18" fill="#ED7A20"/>
+  <text x="150" y="488" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="26" font-weight="700">machine</text>
+
+  <rect x="480" y="196" width="240" height="380" rx="28" fill="#14181C" stroke="#ED7A20" stroke-width="2"/>
+  <text x="530" y="288" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="32" font-weight="700">blackbot</text>
+  <text x="532" y="330" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">recording and reliability layer</text>
+  <rect x="530" y="388" width="140" height="18" rx="9" fill="#0098D2"/>
+  <rect x="530" y="430" width="110" height="18" rx="9" fill="#FFD700"/>
+  <rect x="530" y="472" width="164" height="18" rx="9" fill="#ED7A20"/>
+
+  <rect x="854" y="180" width="242" height="140" rx="24" fill="#14181C"/>
+  <rect x="854" y="340" width="242" height="140" rx="24" fill="#14181C"/>
+  <rect x="854" y="500" width="242" height="140" rx="24" fill="#14181C"/>
+  <text x="904" y="262" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="26" font-weight="700">incidents</text>
+  <text x="902" y="422" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="26" font-weight="700">recordings</text>
+  <text x="922" y="582" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="26" font-weight="700">changes</text>
+
+  <path d="M346 386H446" stroke="#0098D2" stroke-width="8" stroke-linecap="round"/>
+  <path d="M720 386H820" stroke="#ED7A20" stroke-width="8" stroke-linecap="round"/>
+  <path d="M720 410H820" stroke="#FFD700" stroke-width="8" stroke-linecap="round"/>
+  <path d="M720 434H820" stroke="#0098D2" stroke-width="8" stroke-linecap="round"/>
+</svg>

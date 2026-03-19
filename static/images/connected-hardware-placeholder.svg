@@ -1,0 +1,20 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="820" rx="36" fill="#0B0D10"/>
+  <rect x="48" y="48" width="1104" height="724" rx="28" fill="#111316"/>
+  <text x="104" y="132" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="34" font-weight="700">connected hardware</text>
+  <text x="104" y="168" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">placeholder close-up for sensing hardware and research systems</text>
+
+  <rect x="146" y="236" width="508" height="348" rx="32" fill="#171B1F"/>
+  <rect x="198" y="292" width="404" height="236" rx="28" fill="#20262C" stroke="#D4D4D4" stroke-width="3"/>
+  <circle cx="400" cy="410" r="74" stroke="#0098D2" stroke-width="10"/>
+  <circle cx="400" cy="410" r="38" fill="#D4D4D4"/>
+  <rect x="710" y="260" width="344" height="120" rx="24" fill="#171B1F"/>
+  <rect x="710" y="410" width="344" height="120" rx="24" fill="#171B1F"/>
+  <rect x="710" y="560" width="344" height="120" rx="24" fill="#171B1F"/>
+  <text x="748" y="328" fill="#ED7A20" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">sensing</text>
+  <text x="748" y="356" fill="#DCE2E7" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22">camera and scanner modules</text>
+  <text x="748" y="478" fill="#0098D2" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">interfaces</text>
+  <text x="748" y="506" fill="#DCE2E7" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22">field wiring and control links</text>
+  <text x="748" y="628" fill="#FFD700" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">packaging</text>
+  <text x="748" y="656" fill="#DCE2E7" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22">sealed, serviceable housings</text>
+</svg>

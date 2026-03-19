@@ -1,0 +1,20 @@
+<form class="contact-form" accept-charset="UTF-8" action="{{ .Get "action" }}" method="POST" role="form">
+  <label class="contact-form__label" for="name">Name</label>
+  <input class="contact-form__input" type="text" id="name" name="name" autocomplete="name" required />
+
+  <label class="contact-form__label" for="email">Email</label>
+  <input class="contact-form__input" type="email" id="email" name="email" autocomplete="email" required />
+
+  <label class="contact-form__label" for="enquiry">What are you contacting us about?</label>
+  <select class="contact-form__input" id="enquiry" name="enquiry">
+    <option>blackbot flight recorder evaluation walkthrough</option>
+    <option>technical partnership</option>
+    <option>research or applied collaboration</option>
+    <option>general enquiry</option>
+  </select>
+
+  <label class="contact-form__label" for="message">Message</label>
+  <textarea class="contact-form__input contact-form__input--textarea" id="message" name="message" required></textarea>
+
+  <button class="button button--primary button--full" type="submit">send enquiry</button>
+</form>

@@ -1,56 +1,150 @@
 {{ define "main" }}
-<!-- pa0 pa4-ns w-100 cf ph3 ph0-l pv3 pv4-l f4 tl-l center measure-wide lh-copy -->
- <article class="pa3 pa4-ns w-100 w-70-ns f4 center lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
-    {{ .Content }}
-  </article>
-  {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
-  {{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
-  {{/* Create a variable with that section to use in multiple places. */}}
-  {{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
-  {{/* Check to see if the section is defined for ranging through it */}}
-  {{ $section_count := len $section }}
-  {{ if ge $section_count 1 }}
-    {{/* Derive the section name  */}}
-    {{ $section_name := index (.Site.Params.mainSections) 0 }}
-
-    <div class="pa3 pa4-ns w-100 w-70-ns center">
-      {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
-       {{ with .Site.GetPage "section" $section_name }}
-          <h1 class="flex-none">
-            {{ $.Param "recent_copy" | default (i18n "recentTitle" .) }}
-          </h1>
-        {{ end }}
-
-      {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
-
-      <section class="w-100 mw8">
-        {{/* Range through the first $n_posts items of the section */}}
-        {{ range (first $n_posts $section) }}
-          <div class="relative w-100 mb4">
-            {{ .Render "summary-with-image" }}
-          </div>
-        {{ end }}
-      </section>
-
-      {{ if ge $section_count (add $n_posts 1) }}
-      <section class="w-100">
-        <h1 class="f3">{{ i18n "more" }}</h1>
-        {{/* Now, range through the next four after the initial $n_posts items. Nest the requirements, "after" then "first" on the outside */}}
-        {{ range (first 4 (after $n_posts $section))  }}
-          <h2 class="f5 fw4 mb4 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "ml3" "mr3" }}">
-            <a href="{{ .RelPermalink }}" class="link black dim">
-              {{ .Title }}
-            </a>
-          </h2>
-        {{ end }}
-
-        {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it if it exists */}}
-        {{ with .Site.GetPage "section" $section_name }}
-          <a href="{{ .RelPermalink }}" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">{{ i18n "allTitle" . }}</a>
-        {{ end }}
-        </section>
-      {{ end }}
-
+  <div class="site-main">
+    <section class="section section--problem">
+      <div class="section__inner section__inner--tight">
+        <h2>autonomy is easy to demo and hard to keep useful</h2>
+        <p class="section__lede">Too many autonomous systems are sold as lock-in, oversized machinery, or permanent service dependence. When something fails, teams are left with scattered logs, unclear history, and too little operational memory.</p>
       </div>
-  {{ end }}
+    </section>
+
+    <section class="section section--dark section--product">
+      <div class="section__inner section__grid section__grid--product">
+        <div class="section-copy">
+          <p class="section__eyebrow section__eyebrow--accent">now in invited evaluation</p>
+          <h2>blackbot</h2>
+          <p class="section__lede">blackbot keeps incidents, recordings, and incident detail in one place. It helps teams see what happened, follow the event timeline, and move faster from fault to useful evidence.</p>
+          <ul class="feature-list">
+            <li>incident visibility</li>
+            <li>linked recordings</li>
+            <li>incident detail</li>
+          </ul>
+          <div class="button-row">
+            <a class="button button--primary" href="/contact/">request an evaluation walkthrough</a>
+          </div>
+        </div>
+        <div class="visual-cluster">
+          <figure class="visual-frame visual-frame--screenshot">
+            <img src="/images/blackbot-overview.png" alt="blackbot overview showing incidents, reporting robots, and linked recordings." />
+            <figcaption>Overview of incidents, reporting robots, and linked recordings.</figcaption>
+          </figure>
+          <div class="mini-visual-grid">
+            <figure class="visual-frame visual-frame--compact visual-frame--screenshot">
+              <img src="/images/blackbot-incidents.png" alt="blackbot incidents view with incident queue and filters." />
+              <figcaption>Incidents queue and filters.</figcaption>
+            </figure>
+            <figure class="visual-frame visual-frame--compact visual-frame--screenshot">
+              <img src="/images/blackbot-recordings.png" alt="blackbot recordings view with ready captures and retry queue." />
+              <figcaption>Recordings ready to download.</figcaption>
+            </figure>
+            <figure class="visual-frame visual-frame--compact visual-frame--screenshot">
+              <img src="/images/blackbot-incident-detail.png" alt="blackbot incident detail view with timeline, linked recordings, and machine context." />
+              <figcaption>Incident detail and linked evidence.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__inner section__grid">
+        <div class="section-copy">
+          <p class="section__eyebrow">protected-cropping direction</p>
+          <h2>building towards modular systems for protected cropping</h2>
+          <p class="section__lede">Practical hardware and software for useful work around plants. Inspection, sensing, movement, and action. Dependable, upgradeable, and under the operator’s control.</p>
+        </div>
+        <div class="visual-stack">
+          <figure class="visual-frame visual-frame--photo">
+            <img src="/images/croppo-v19.1.jpg" alt="Render of a protected-cropping robot platform from Evil Robots." />
+            <figcaption>Current protected-cropping direction render.</figcaption>
+          </figure>
+          <figure class="visual-frame">
+            <span class="visual-badge">to be updated</span>
+            <img src="/images/protected-cropping-blueprint.svg" alt="Placeholder protected-cropping engineering drawing." />
+            <figcaption>Placeholder engineering visual, to be updated with CAD crops or design material.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--proof">
+      <div class="section__inner">
+        <div class="section-heading">
+          <h2>we build real things</h2>
+          <p class="section__lede">Reliability software, connected hardware, and applied system design. blackbot flight recorder today. Experimental hardware for research environments. Protected-cropping systems in development.</p>
+        </div>
+        <div class="card-grid">
+          <article class="proof-card">
+            <figure class="visual-frame visual-frame--card visual-frame--screenshot">
+              <img src="/images/blackbot-incidents.png" alt="blackbot incidents view." />
+            </figure>
+            <h3>blackbot</h3>
+            <p>incidents, recordings, and detail for robots and connected machines</p>
+          </article>
+          <article class="proof-card">
+            <figure class="visual-frame visual-frame--card">
+              <span class="visual-badge">to be updated</span>
+              <img src="/images/connected-hardware-placeholder.svg" alt="Placeholder connected hardware close-up." />
+            </figure>
+            <h3>connected hardware</h3>
+            <p>designed and built sensing systems for real research use</p>
+          </article>
+          <article class="proof-card">
+            <figure class="visual-frame visual-frame--card">
+              <img src="/images/croppo-v19.1.jpg" alt="Protected-cropping robot render." />
+            </figure>
+            <h3>protected-cropping systems</h3>
+            <p>modular hardware direction now under development</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__inner">
+        <div class="cta-panel">
+          <div>
+            <h2>start with blackbot</h2>
+            <p class="section__lede">Talk to us about blackbot flight recorder for your robots or connected machines.</p>
+            <p class="cta-panel__note">For protected-cropping systems in development, get in touch.</p>
+          </div>
+          <div class="button-row">
+            <a class="button button--primary" href="/contact/">book a blackbot walkthrough</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+{{ end }}
+
+{{ define "header" }}
+  <header class="site-shell site-shell--home">
+    {{ partial "site-navigation.html" . }}
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1>practical autonomy infrastructure</h1>
+        <p>We build software and systems for machines that need to stay useful in the real world. Our first product is blackbot flight recorder, the flight recorder and reliability layer for robots and connected machines.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/blackbot/">see blackbot</a>
+          <a class="button button--secondary" href="/company/">about evil robots</a>
+        </div>
+      </div>
+      <div class="hero-visual-grid">
+        <figure class="visual-frame visual-frame--hero visual-frame--screenshot">
+          <img src="/images/blackbot-overview.png" alt="blackbot overview showing current incidents, reporting robots, and linked recordings." />
+          <figcaption>blackbot overview with current incidents, reporting robots, and linked recordings.</figcaption>
+        </figure>
+        <div class="visual-stack">
+          <figure class="visual-frame">
+            <span class="visual-badge">to be updated</span>
+            <img src="/images/autonomy-arc.svg" alt="Placeholder systems diagram showing a machine feeding data into blackbot." />
+            <figcaption>Placeholder systems graphic, to be updated with product or architecture material.</figcaption>
+          </figure>
+          <figure class="visual-frame visual-frame--photo">
+            <img src="/images/croppo-v19.1.jpg" alt="Render of a protected-cropping machine platform." />
+            <figcaption>Current protected-cropping direction render.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </header>
 {{ end }}

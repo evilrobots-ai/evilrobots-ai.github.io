@@ -1,13 +1,13 @@
 baseURL = "https://evilrobots.ai"
-languageCode = "en-us"
-title = "evil robots pty ltd"
+languageCode = "en-au"
+title = "evil robots"
 themesDir = "themes"
 theme = "ananke"
 publishdir = "docs"
+disableKinds = ["taxonomy", "term", "RSS"]
 
 DefaultContentLanguage = "en"
-SectionPagesMenu = "main"
-Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+Paginate = 6
 googleAnalytics = ""
 enableRobotsTXT = true
 
@@ -24,36 +24,52 @@ enableRobotsTXT = true
   filename = "sitemap.xml"
 
 [params]
-  text_color = ""
   author = ""
   favicon = "favicon.png"
   site_logo = "/images/er-logo-transparent-inv-300x46.png"
-  description = ""
-  recent_copy = "What we do"
-  # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  description = "Practical autonomy infrastructure. blackbot flight recorder is now in invited evaluation."
   background_color_class = "bg-black"
-  recent_posts_number = 3
-
-  body_classes = "montserrat bg-near-white"
-  custom_css = ["video.css"]
-
-[[params.links]]
-  url = "/contact"
-  description = "Contact us"
+  body_classes = "site-body bg-near-white"
+  custom_css = ["site.css"]
+  preview_mode = true
 
 [[params.links]]
-  url = "/privacy"
-  description = "Privacy Policy"
+  url = "/privacy/"
+  description = "Privacy"
 
 [[params.links]]
-  url = "/conditions"
-  description = "Terms and Conditions"
+  url = "/conditions/"
+  description = "Terms"
+
+[[params.links]]
+  url = "/contact/"
+  description = "Contact"
 
 [[params.links]]
   description = "evil robots ® is a registered trademark"
 
 [[params.links]]
   description = "ABN 21667313911"
+
+[[menu.main]]
+  name = "blackbot"
+  url = "/blackbot/"
+  weight = 10
+
+[[menu.main]]
+  name = "company"
+  url = "/company/"
+  weight = 20
+
+[[menu.main]]
+  name = "work"
+  url = "/work/"
+  weight = 30
+
+[[menu.main]]
+  name = "contact"
+  url = "/contact/"
+  weight = 40
 
 [[params.ananke_socials]]
 name = "twitter"

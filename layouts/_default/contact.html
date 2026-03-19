@@ -1,0 +1,42 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
+
+{{ define "main" }}
+  <div class="site-main">
+    <section class="section">
+      <div class="section__inner contact-layout">
+        <div class="contact-copy">
+          <p class="section__eyebrow">contact</p>
+          <h2>Talk to us about blackbot flight recorder, early access, technical collaboration, or protected-cropping direction.</h2>
+          <ul class="feature-list feature-list--stacked">
+            <li>blackbot flight recorder evaluation walkthrough</li>
+            <li>technical partnership</li>
+            <li>research or applied collaboration</li>
+            <li>general enquiry</li>
+          </ul>
+        </div>
+        <div class="contact-form-card">
+          <form class="contact-form" accept-charset="UTF-8" action="https://formspree.io/f/xdoqlopo" method="POST" role="form">
+            <label class="contact-form__label" for="name">Name</label>
+            <input class="contact-form__input" type="text" id="name" name="name" autocomplete="name" required />
+
+            <label class="contact-form__label" for="email">Email</label>
+            <input class="contact-form__input" type="email" id="email" name="email" autocomplete="email" required />
+
+            <label class="contact-form__label" for="enquiry">What are you contacting us about?</label>
+            <select class="contact-form__input" id="enquiry" name="enquiry">
+              <option>blackbot flight recorder evaluation walkthrough</option>
+              <option>technical partnership</option>
+              <option>research or applied collaboration</option>
+              <option>general enquiry</option>
+            </select>
+
+            <label class="contact-form__label" for="message">Message</label>
+            <textarea class="contact-form__input contact-form__input--textarea" id="message" name="message" required></textarea>
+
+            <button class="button button--primary button--full" type="submit">send enquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+{{ end }}

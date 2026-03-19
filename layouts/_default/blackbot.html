@@ -1,0 +1,59 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
+
+{{ define "main" }}
+  <div class="site-main">
+    <section class="section">
+      <div class="section__inner feature-stack">
+        <article class="feature-panel">
+          <div class="feature-panel__copy">
+            <p class="section__eyebrow">incidents</p>
+            <h2>see incidents clearly</h2>
+            <p>See the incident queue, the selected incident, and the filters that matter without digging through raw logs.</p>
+          </div>
+          <figure class="visual-frame visual-frame--screenshot feature-panel__visual">
+            <img src="/images/blackbot-incidents.png" alt="blackbot incidents view with incident queue and filters." />
+            <figcaption>Incidents view with queue, selected incident, and filters.</figcaption>
+          </figure>
+        </article>
+
+        <article class="feature-panel feature-panel--reverse">
+          <div class="feature-panel__copy">
+            <p class="section__eyebrow">recordings</p>
+            <h2>keep recordings close</h2>
+            <p>See what is ready, what is retrying, and which incidents each recording belongs to.</p>
+          </div>
+          <figure class="visual-frame visual-frame--screenshot feature-panel__visual">
+            <img src="/images/blackbot-recordings.png" alt="blackbot recordings view with ready captures and retry queue." />
+            <figcaption>Recordings view with ready captures and retry state.</figcaption>
+          </figure>
+        </article>
+
+        <article class="feature-panel">
+          <div class="feature-panel__copy">
+            <p class="section__eyebrow">incident detail</p>
+            <h2>follow the detail</h2>
+            <p>Move from the incident summary to the event timeline, linked recordings, and machine context in one view.</p>
+          </div>
+          <figure class="visual-frame visual-frame--screenshot feature-panel__visual">
+            <img src="/images/blackbot-incident-detail.png" alt="blackbot incident detail view with timeline, linked recordings, and machine context." />
+            <figcaption>Incident timeline, linked recordings, and machine context.</figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="section__inner">
+        <div class="cta-panel">
+          <div>
+            <h2>Talk to us about blackbot for your robots or connected systems.</h2>
+          </div>
+          <div class="button-row">
+            <a class="button button--primary" href="/contact/">request an evaluation walkthrough</a>
+            <a class="button button--secondary" href="/work/">see work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+{{ end }}

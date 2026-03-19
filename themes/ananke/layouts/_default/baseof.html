@@ -11,10 +11,10 @@
     {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
     {{ $production := eq (getenv "HUGO_ENV") "production" | or (eq site.Params.env "production") }}
     {{ $public := not .Params.private }}
-    {{ if and $production $public }}
+    {{ if and $production $public (not site.Params.preview_mode) }}
       <meta name="robots" content="index, follow">
     {{ else }}
-      <meta name="robots" content="noindex, nofollow">
+      <meta name="robots" content="noindex, nofollow, noarchive">
     {{ end }}
 
     {{ partial "site-style.html" . }}
@@ -49,7 +49,9 @@
   </head>
 
   <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
-
+    {{ if site.Params.preview_mode }}
+      <div class="preview-banner">Preview only. Not approved for launch.</div>
+    {{ end }}
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
     <main class="pb7" role="main">
       {{ block "main" . }}{{ end }}

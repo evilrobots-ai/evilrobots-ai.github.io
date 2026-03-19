@@ -1,0 +1,18 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="820" rx="36" fill="#0A2030"/>
+  <rect x="50" y="50" width="1100" height="720" rx="28" fill="#102A3D"/>
+  <path d="M150 590H1048" stroke="#6FA7C0" stroke-width="2" stroke-dasharray="8 10"/>
+  <rect x="220" y="360" width="540" height="170" rx="24" stroke="#D4D4D4" stroke-width="4"/>
+  <rect x="260" y="320" width="460" height="40" rx="12" stroke="#D4D4D4" stroke-width="4"/>
+  <circle cx="320" cy="560" r="54" stroke="#D4D4D4" stroke-width="4"/>
+  <circle cx="648" cy="560" r="54" stroke="#D4D4D4" stroke-width="4"/>
+  <rect x="786" y="244" width="220" height="342" rx="24" stroke="#D4D4D4" stroke-width="4"/>
+  <line x1="826" y1="328" x2="966" y2="328" stroke="#0098D2" stroke-width="8" stroke-linecap="round"/>
+  <line x1="826" y1="382" x2="934" y2="382" stroke="#ED7A20" stroke-width="8" stroke-linecap="round"/>
+  <line x1="826" y1="436" x2="982" y2="436" stroke="#FFD700" stroke-width="8" stroke-linecap="round"/>
+  <text x="118" y="132" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="34" font-weight="700">protected cropping direction</text>
+  <text x="118" y="168" fill="#B8D1DE" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">placeholder blueprint to be replaced with CAD crops or engineering material</text>
+  <text x="860" y="620" fill="#B8D1DE" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">inspection</text>
+  <text x="860" y="648" fill="#B8D1DE" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">movement</text>
+  <text x="860" y="676" fill="#B8D1DE" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">action</text>
+</svg>

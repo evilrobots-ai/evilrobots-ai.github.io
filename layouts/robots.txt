@@ -1,0 +1,7 @@
+User-agent: *
+{{ if and (or (eq (getenv "HUGO_ENV") "production") (eq .Site.Params.env "production")) (not .Site.Params.preview_mode) -}}
+Allow: /
+Sitemap: {{ "/sitemap.xml" | absURL }}
+{{ else -}}
+Disallow: /
+{{ end -}}
