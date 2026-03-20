@@ -621,6 +621,14 @@ a {
   gap: 0.9rem;
 }
 
+.contact-copy__note,
+.contact-form__hint,
+.contact-form__status {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
 .contact-form__label {
   font-size: 0.88rem;
   font-weight: 700;
@@ -647,6 +655,26 @@ a {
 .contact-form__input--textarea {
   min-height: 9rem;
   resize: vertical;
+}
+
+.contact-form__trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.contact-form__status {
+  min-height: 1.35rem;
+}
+
+.contact-form__status.is-success {
+  color: #0d7a46;
+}
+
+.contact-form__status.is-error {
+  color: #b33922;
 }
 
 .site-footer {

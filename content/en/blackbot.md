@@ -1,6 +1,6 @@
 ---
 title: "blackbot flight recorder"
-description: "The flight recorder for robots. blackbot keeps incidents, recordings, and incident detail in one place so teams can see what happened and where to look first."
+description: "The flight recorder for robots. blackbot keeps incidents, timelines, and evidence together so support teams can move faster from failure to facts."
 layout: blackbot
 hero_eyebrow: "now in invited evaluation"
 hero_primary_label: "request an evaluation walkthrough"

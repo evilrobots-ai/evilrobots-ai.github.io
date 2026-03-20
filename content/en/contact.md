@@ -1,5 +1,5 @@
 ---
 title: contact
-description: Talk robots with us.
+description: Talk to us about blackbot, technical partnerships, or applied work.
 layout: contact
 ---

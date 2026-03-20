@@ -1,55 +1,76 @@
 ---
-title: Privacy Policy
+title: privacy
 featured_image: ''
 omit_header_text: true
-description: privacy policy
+description: How evilrobots.ai handles contact enquiries and walkthrough requests.
 type: page
 
 ---
-evil robots pty ltd is committed to providing quality services to you and this policy outlines our ongoing obligations to you in respect of how we manage your Personal Information.
+This page explains how evil robots pty ltd handles personal information collected through `evilrobots.ai`.
 
-We have adopted the Australian Privacy Principles (APPs) contained in the Privacy Act 1988 (Cth) (the Privacy Act). The APPs govern the way in which we collect, use, disclose, store, secure and dispose of your Personal Information. A copy of the Australian Privacy Principles may be obtained from the website of The Office of the Australian Information Commissioner at https://www.oaic.gov.au/.
+We aim to keep this policy aligned with the Privacy Act 1988 (Cth) and the Australian Privacy Principles.
 
-## What is Personal Information and why do we collect it?
-Personal Information is information or an opinion that identifies an individual. Examples of Personal Information we collect includes names, addresses, email addresses, phone and facsimile numbers.
+## What we collect
 
-This Personal Information is obtained in many ways including correspondence, by telephone and facsimile, by email, via our website evilrobots.ai, from media and publications, from other publicly available sources, from cookies and from third parties. We don't guarantee website links or policy of authorised third parties.
+We may collect:
 
-We collect your Personal Information for the primary purpose of providing our services to you, providing information to our clients and marketing. We may also use your Personal Information for secondary purposes closely related to the primary purpose, in circumstances where you would reasonably expect such use or disclosure. You may unsubscribe from our mailing/marketing lists at any time by contacting us in writing.
+- your name, email address, enquiry type, and any other information you submit through the contact form
+- the contents of walkthrough requests, collaboration enquiries, and other correspondence you send us
+- standard technical request data generated when you visit the site, such as IP address, browser details, referring page, and request timing
 
-When we collect Personal Information we will, where appropriate and where possible, explain to you why we are collecting the information and how we plan to use it.
+This public website is an entry point for enquiries and walkthrough requests. It does not host or process `blackbot` product data or evaluation recordings.
 
-## Sensitive Information
-Sensitive information is defined in the Privacy Act to include information or opinion about such things as an individual's racial or ethnic origin, political opinions, membership of a political association, religious or philosophical beliefs, membership of a trade union or other professional body, criminal record or health information.
+## How we collect it
 
-Sensitive information will be used by us only:
+We collect information:
 
-- For the primary purpose for which it was obtained
-- For a secondary purpose that is directly related to the primary purpose
-- With your consent; or where required or authorised by law.
-## Third Parties
-Where reasonable and practicable to do so, we will collect your Personal Information only from you. However, in some circumstances we may be provided with information by third parties. In such a case we will take reasonable steps to ensure that you are made aware of the information provided to us by the third party.
+- directly from you when you use the contact form or otherwise contact us
+- automatically through normal web requests when your browser loads pages, images, fonts, and other site assets
+- from service providers that process form submissions or deliver site infrastructure on our behalf
 
-## Disclosure of Personal Information
-Your Personal Information may be disclosed in a number of circumstances including the following:
+## Why we use it
 
-- Third parties where you consent to the use or disclosure; and
-- Where required or authorised by law.
-## Security of Personal Information
-Your Personal Information is stored in a manner that reasonably protects it from misuse and loss and from unauthorised access, modification or disclosure. When your Personal Information is no longer needed for the purpose for which it was obtained, we will take reasonable steps to destroy or permanently de-identify your Personal Information. However, most of the Personal Information is or will be stored in client files which will be kept by us for a minimum of 7 years.
+We use personal information to:
 
-## Access to your Personal Information
-You may access the Personal Information we hold about you and to update and/or correct it, subject to certain exceptions. If you wish to access your Personal Information, please contact us in writing.
+- respond to contact enquiries and walkthrough requests
+- assess and manage early evaluation discussions, technical partnerships, and collaboration conversations
+- operate, secure, and improve the site
+- comply with legal obligations and protect our legitimate business interests
 
-evil robots pty ltd will not charge any fee for your access request, but may charge an administrative fee for providing a copy of your Personal Information. In order to protect your Personal Information we may require identification from you before releasing the requested information.
+We do not use this site to build marketing profiles or run behavioural advertising.
 
-## Maintaining the Quality of your Personal Information
-It is an important to us that your Personal Information is up to date. We will take reasonable steps to make sure that your Personal Information is accurate, complete and up-to-date. If you find that the information we have is not up to date or is inaccurate, please advise us as soon as practicable so we can update our records and ensure we can continue to provide quality services to you.
+## Third-party providers
 
-## Policy Updates
-This Policy may change from time to time and is available on our website.
+The site currently relies on third-party providers including:
 
-## Privacy Policy Complaints and Enquiries
-If you have any queries or complaints about our Privacy Policy please contact us at:
+- **GitHub Pages / GitHub** for website hosting and delivery
+- **Formspree** for contact form handling
+- **Google Fonts** for web font delivery
 
-evil robots pty ltd; PO Box 201; Berowra Heights, NSW 2082 Australia
+These providers may receive the information needed to deliver their part of the service. Their handling of personal information is also subject to their own privacy terms and infrastructure choices.
+
+## Overseas disclosure
+
+Some of the providers used to operate the site may process data outside Australia. Based on the current setup, that may include the United States and other jurisdictions used by our hosting, form, and font providers.
+
+## Cookies and analytics
+
+The site does not currently use its own analytics cookies or advertising trackers.
+
+Standard web requests may still involve technical logging by our hosting and service providers. If analytics are added later, this policy will be updated.
+
+## Storage and retention
+
+We take reasonable steps to protect personal information from misuse, interference, loss, and unauthorised access or disclosure.
+
+We keep enquiry information for as long as reasonably needed to respond, manage follow-up, and maintain a record of business communications. We aim to review website enquiry records at least every 24 months and delete or de-identify information that is no longer needed, unless a longer retention period is required by law or justified by an active business relationship.
+
+## Access, correction, and complaints
+
+If you want to request access to personal information we hold about you, ask for a correction, or raise a privacy concern, contact us through the [contact page](/contact/) and mark your message as a privacy enquiry.
+
+We may need to verify your identity before actioning a request.
+
+## Changes to this policy
+
+We may update this page from time to time. The current version published on this site applies from the date it is posted.

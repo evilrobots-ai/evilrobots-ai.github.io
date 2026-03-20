@@ -6,7 +6,8 @@
       <div class="section__inner contact-layout">
         <div class="contact-copy">
           <p class="section__eyebrow">contact</p>
-          <h2>Talk to us.</h2>
+          <h2>Talk to us about blackbot, technical partnerships, or applied work.</h2>
+          <p class="contact-copy__note">Fields marked <span aria-hidden="true">*</span> are required.</p>
           <ul class="feature-list feature-list--stacked">
             <li>blackbot flight recorder evaluation walkthrough</li>
             <li>technical partnership</li>
@@ -15,28 +16,87 @@
           </ul>
         </div>
         <div class="contact-form-card">
-          <form class="contact-form" accept-charset="UTF-8" action="https://formspree.io/f/xdoqlopo" method="POST" role="form">
-            <label class="contact-form__label" for="name">Name</label>
-            <input class="contact-form__input" type="text" id="name" name="name" autocomplete="name" required />
+          <form class="contact-form" accept-charset="UTF-8" action="https://formspree.io/f/xdoqlopo" method="POST" role="form" data-contact-form>
+            <label class="contact-form__label" for="name">Name <span aria-hidden="true">*</span></label>
+            <input class="contact-form__input" type="text" id="name" name="name" autocomplete="name" required aria-required="true" />
 
-            <label class="contact-form__label" for="email">Email</label>
-            <input class="contact-form__input" type="email" id="email" name="email" autocomplete="email" required />
+            <label class="contact-form__label" for="email">Email <span aria-hidden="true">*</span></label>
+            <input class="contact-form__input" type="email" id="email" name="email" autocomplete="email" required aria-required="true" />
 
-            <label class="contact-form__label" for="enquiry">What are you contacting us about?</label>
-            <select class="contact-form__input" id="enquiry" name="enquiry">
+            <label class="contact-form__label" for="enquiry">What are you contacting us about? <span aria-hidden="true">*</span></label>
+            <select class="contact-form__input" id="enquiry" name="enquiry" required aria-required="true">
               <option>blackbot flight recorder evaluation walkthrough</option>
               <option>technical partnership</option>
               <option>research or applied collaboration</option>
               <option>general enquiry</option>
             </select>
 
-            <label class="contact-form__label" for="message">Message</label>
-            <textarea class="contact-form__input contact-form__input--textarea" id="message" name="message" required></textarea>
+            <label class="contact-form__label" for="message">Message <span aria-hidden="true">*</span></label>
+            <textarea class="contact-form__input contact-form__input--textarea" id="message" name="message" required aria-required="true"></textarea>
 
-            <button class="button button--primary button--full" type="submit">send enquiry</button>
+            <input class="contact-form__trap" type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off" />
+
+            <p class="contact-form__hint">Use this form to request an evaluation walkthrough or start a technical conversation.</p>
+            <p class="contact-form__status" role="status" aria-live="polite" data-contact-status></p>
+
+            <button class="button button--primary button--full" type="submit" data-contact-submit>send enquiry</button>
           </form>
         </div>
       </div>
     </section>
   </div>
+{{ end }}
+
+{{ define "footer" }}
+  {{ partialCached "site-footer.html" . }}
+  <script>
+    (() => {
+      const form = document.querySelector("[data-contact-form]");
+      const status = document.querySelector("[data-contact-status]");
+      const submit = document.querySelector("[data-contact-submit]");
+
+      if (!form || !status || !submit) {
+        return;
+      }
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        if (typeof form.reportValidity === "function" && !form.reportValidity()) {
+          status.textContent = "Please complete the required fields before sending your enquiry.";
+          status.className = "contact-form__status is-error";
+          return;
+        }
+
+        submit.disabled = true;
+        status.textContent = "Sending enquiry...";
+        status.className = "contact-form__status";
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: {
+              Accept: "application/json"
+            }
+          });
+
+          if (response.ok) {
+            form.reset();
+            status.textContent = "Enquiry sent. We will be in touch.";
+            status.className = "contact-form__status is-success";
+            return;
+          }
+
+          status.textContent = "We could not send your enquiry just now. Please try again or contact us later.";
+          status.className = "contact-form__status is-error";
+        } catch (error) {
+          status.textContent = "We could not send your enquiry just now. Please try again or contact us later.";
+          status.className = "contact-form__status is-error";
+        } finally {
+          submit.disabled = false;
+        }
+      });
+    })();
+  </script>
 {{ end }}

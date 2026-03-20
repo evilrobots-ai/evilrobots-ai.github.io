@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-au"ZgotmplZ>
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
     <title>contact | evil robots pty ltd</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Talk robots with us.">
+    <meta name="description" content="Talk to us about blackbot, technical partnerships, or applied work.">
     <meta name="generator" content="Hugo 0.157.0">
     
     
@@ -34,21 +34,21 @@
     
 
     
-      <link rel="canonical" href="https://evilrobots.ai/contact/">
+      <link rel="canonical" href="http://localhost:1313/contact/">
     
 
-    <meta property="og:url" content="https://evilrobots.ai/contact/">
+    <meta property="og:url" content="http://localhost:1313/contact/">
   <meta property="og:site_name" content="evil robots pty ltd">
   <meta property="og:title" content="contact">
-  <meta property="og:description" content="Talk robots with us.">
+  <meta property="og:description" content="Talk to us about blackbot, technical partnerships, or applied work.">
   <meta property="og:locale" content="en_au">
   <meta property="og:type" content="article">
 
   <meta itemprop="name" content="contact">
-  <meta itemprop="description" content="Talk robots with us.">
+  <meta itemprop="description" content="Talk to us about blackbot, technical partnerships, or applied work.">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="contact">
-  <meta name="twitter:description" content="Talk robots with us.">
+  <meta name="twitter:description" content="Talk to us about blackbot, technical partnerships, or applied work.">
 
 	
   </head>
@@ -85,7 +85,7 @@
         
         <h1>contact</h1>
         
-          <p class="page-hero__summary">Talk robots with us.</p>
+          <p class="page-hero__summary">Talk to us about blackbot, technical partnerships, or applied work.</p>
         
         
       </div>
@@ -101,7 +101,8 @@
       <div class="section__inner contact-layout">
         <div class="contact-copy">
           <p class="section__eyebrow">contact</p>
-          <h2>Talk to us.</h2>
+          <h2>Talk to us about blackbot, technical partnerships, or applied work.</h2>
+          <p class="contact-copy__note">Fields marked <span aria-hidden="true">*</span> are required.</p>
           <ul class="feature-list feature-list--stacked">
             <li>blackbot flight recorder evaluation walkthrough</li>
             <li>technical partnership</li>
@@ -110,25 +111,30 @@
           </ul>
         </div>
         <div class="contact-form-card">
-          <form class="contact-form" accept-charset="UTF-8" action="https://formspree.io/f/xdoqlopo" method="POST" role="form">
-            <label class="contact-form__label" for="name">Name</label>
-            <input class="contact-form__input" type="text" id="name" name="name" autocomplete="name" required />
+          <form class="contact-form" accept-charset="UTF-8" action="https://formspree.io/f/xdoqlopo" method="POST" role="form" data-contact-form>
+            <label class="contact-form__label" for="name">Name <span aria-hidden="true">*</span></label>
+            <input class="contact-form__input" type="text" id="name" name="name" autocomplete="name" required aria-required="true" />
 
-            <label class="contact-form__label" for="email">Email</label>
-            <input class="contact-form__input" type="email" id="email" name="email" autocomplete="email" required />
+            <label class="contact-form__label" for="email">Email <span aria-hidden="true">*</span></label>
+            <input class="contact-form__input" type="email" id="email" name="email" autocomplete="email" required aria-required="true" />
 
-            <label class="contact-form__label" for="enquiry">What are you contacting us about?</label>
-            <select class="contact-form__input" id="enquiry" name="enquiry">
+            <label class="contact-form__label" for="enquiry">What are you contacting us about? <span aria-hidden="true">*</span></label>
+            <select class="contact-form__input" id="enquiry" name="enquiry" required aria-required="true">
               <option>blackbot flight recorder evaluation walkthrough</option>
               <option>technical partnership</option>
               <option>research or applied collaboration</option>
               <option>general enquiry</option>
             </select>
 
-            <label class="contact-form__label" for="message">Message</label>
-            <textarea class="contact-form__input contact-form__input--textarea" id="message" name="message" required></textarea>
+            <label class="contact-form__label" for="message">Message <span aria-hidden="true">*</span></label>
+            <textarea class="contact-form__input contact-form__input--textarea" id="message" name="message" required aria-required="true"></textarea>
 
-            <button class="button button--primary button--full" type="submit">send enquiry</button>
+            <input class="contact-form__trap" type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off" />
+
+            <p class="contact-form__hint">Use this form to request an evaluation walkthrough or start a technical conversation.</p>
+            <p class="contact-form__status" role="status" aria-live="polite" data-contact-status></p>
+
+            <button class="button button--primary button--full" type="submit" data-contact-submit>send enquiry</button>
           </form>
         </div>
       </div>
@@ -136,10 +142,11 @@
   </div>
 
     </main>
-    <footer class="site-footer" role="contentinfo">
+    
+  <footer class="site-footer" role="contentinfo">
   <div class="site-footer__inner">
     <div class="site-footer__brand">
-      <a href="https://evilrobots.ai/">evil robots pty ltd</a>
+      <a href="http://localhost:1313/">evil robots pty ltd</a>
       <p>Practical autonomy infrastructure.</p>
     </div>
     <div class="site-footer__meta">
@@ -178,6 +185,57 @@
     </div>
   </div>
 </footer>
+
+  <script>
+    (() => {
+      const form = document.querySelector("[data-contact-form]");
+      const status = document.querySelector("[data-contact-status]");
+      const submit = document.querySelector("[data-contact-submit]");
+
+      if (!form || !status || !submit) {
+        return;
+      }
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        if (typeof form.reportValidity === "function" && !form.reportValidity()) {
+          status.textContent = "Please complete the required fields before sending your enquiry.";
+          status.className = "contact-form__status is-error";
+          return;
+        }
+
+        submit.disabled = true;
+        status.textContent = "Sending enquiry...";
+        status.className = "contact-form__status";
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: {
+              Accept: "application/json"
+            }
+          });
+
+          if (response.ok) {
+            form.reset();
+            status.textContent = "Enquiry sent. We will be in touch.";
+            status.className = "contact-form__status is-success";
+            return;
+          }
+
+          status.textContent = "We could not send your enquiry just now. Please try again or contact us later.";
+          status.className = "contact-form__status is-error";
+        } catch (error) {
+          status.textContent = "We could not send your enquiry just now. Please try again or contact us later.";
+          status.className = "contact-form__status is-error";
+        } finally {
+          submit.disabled = false;
+        }
+      });
+    })();
+  </script>
 
   </body>
 </html>
