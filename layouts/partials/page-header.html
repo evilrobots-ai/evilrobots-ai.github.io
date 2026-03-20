@@ -24,7 +24,6 @@
       {{ with .Params.hero_media }}
         <figure class="visual-frame page-hero__media">
           {{ with $.Params.hero_note }}
-            <span class="visual-badge">to be updated</span>
           {{ end }}
           <img src="{{ . }}" alt="{{ $.Params.hero_media_alt | default $.Title }}" />
           {{ with $.Params.hero_note }}
