@@ -1,31 +1,89 @@
 <svg width="1200" height="820" viewBox="0 0 1200 820" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="1200" height="820" rx="36" fill="#0B0D10"/>
   <rect x="52" y="52" width="1096" height="716" rx="28" fill="#111316"/>
-  <text x="104" y="132" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="34" font-weight="700">system arc</text>
-  <text x="104" y="168" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">machines, records, incidents, and changes joined in one operational story</text>
 
-  <rect x="108" y="244" width="238" height="284" rx="26" fill="#14181C"/>
-  <rect x="178" y="324" width="98" height="92" rx="16" fill="#D4D4D4"/>
-  <circle cx="200" cy="442" r="18" fill="#0098D2"/>
-  <circle cx="254" cy="442" r="18" fill="#ED7A20"/>
-  <text x="150" y="488" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="26" font-weight="700">machine</text>
+  <text x="104" y="132" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="34" font-weight="700">blackbot flight recorder</text>
+  <text x="104" y="168" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">Machine state and captures become operator-ready incidents,</text>
+  <text x="104" y="192" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">recordings, and incident detail.</text>
 
-  <rect x="480" y="196" width="240" height="380" rx="28" fill="#14181C" stroke="#ED7A20" stroke-width="2"/>
-  <text x="530" y="288" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="32" font-weight="700">blackbot</text>
-  <text x="532" y="330" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">recording and reliability layer</text>
-  <rect x="530" y="388" width="140" height="18" rx="9" fill="#0098D2"/>
-  <rect x="530" y="430" width="110" height="18" rx="9" fill="#FFD700"/>
-  <rect x="530" y="472" width="164" height="18" rx="9" fill="#ED7A20"/>
+  <rect x="92" y="210" width="254" height="392" rx="28" fill="#15191D" stroke="#232A31" stroke-width="2"/>
+  <text x="124" y="260" fill="#9BA4AD" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="0.16em">INPUT</text>
+  <text x="124" y="302" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="30" font-weight="700">robots and</text>
+  <text x="124" y="338" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="30" font-weight="700">connected machines</text>
+  <text x="124" y="370" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">Health, events, and captures</text>
+  <text x="124" y="394" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">coming back from the field.</text>
 
-  <rect x="854" y="180" width="242" height="140" rx="24" fill="#14181C"/>
-  <rect x="854" y="340" width="242" height="140" rx="24" fill="#14181C"/>
-  <rect x="854" y="500" width="242" height="140" rx="24" fill="#14181C"/>
-  <text x="904" y="262" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="26" font-weight="700">incidents</text>
-  <text x="902" y="422" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="26" font-weight="700">recordings</text>
-  <text x="922" y="582" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="26" font-weight="700">changes</text>
+  <g transform="translate(116 410)">
+    <rect x="0" y="66" width="196" height="58" rx="14" fill="#D7DADF"/>
+    <rect x="18" y="22" width="160" height="48" rx="16" fill="#EEF1F4"/>
+    <rect x="32" y="0" width="132" height="28" rx="10" fill="#CBD1D8"/>
+    <rect x="24" y="78" width="18" height="18" rx="4" fill="#0F1317"/>
+    <rect x="154" y="78" width="18" height="18" rx="4" fill="#0F1317"/>
+    <circle cx="40" cy="106" r="18" fill="#181C21"/>
+    <circle cx="156" cy="106" r="18" fill="#181C21"/>
+    <circle cx="172" cy="24" r="8" fill="#0098D2"/>
+    <rect x="78" y="10" width="40" height="8" rx="4" fill="#B5BDC7"/>
+    <rect x="52" y="94" width="92" height="4" rx="2" fill="#B5BDC7"/>
+  </g>
 
-  <path d="M346 386H446" stroke="#0098D2" stroke-width="8" stroke-linecap="round"/>
-  <path d="M720 386H820" stroke="#ED7A20" stroke-width="8" stroke-linecap="round"/>
-  <path d="M720 410H820" stroke="#FFD700" stroke-width="8" stroke-linecap="round"/>
-  <path d="M720 434H820" stroke="#0098D2" stroke-width="8" stroke-linecap="round"/>
+  <rect x="124" y="560" width="66" height="28" rx="14" fill="#1C2228" stroke="#3A454F"/>
+  <text x="140" y="579" fill="#DCE2E7" font-family="IBM Plex Sans, Arial, sans-serif" font-size="14" font-weight="600">health</text>
+  <rect x="198" y="560" width="62" height="28" rx="14" fill="#1C2228" stroke="#3A454F"/>
+  <text x="217" y="579" fill="#DCE2E7" font-family="IBM Plex Sans, Arial, sans-serif" font-size="14" font-weight="600">events</text>
+  <rect x="268" y="560" width="66" height="28" rx="14" fill="#1C2228" stroke="#3A454F"/>
+  <text x="281" y="579" fill="#DCE2E7" font-family="IBM Plex Sans, Arial, sans-serif" font-size="14" font-weight="600">captures</text>
+
+  <path d="M352 390H418" stroke="#4A5661" stroke-width="4" stroke-linecap="round"/>
+  <path d="M352 426H398" stroke="#4A5661" stroke-width="4" stroke-linecap="round"/>
+  <path d="M352 462H418" stroke="#4A5661" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="352" cy="390" r="5" fill="#0098D2"/>
+  <circle cx="352" cy="426" r="5" fill="#ED7A20"/>
+  <circle cx="352" cy="462" r="5" fill="#7E8A95"/>
+
+  <rect x="438" y="190" width="324" height="454" rx="30" fill="#15191D" stroke="#ED7A20" stroke-width="2.5"/>
+  <text x="474" y="224" fill="#9BA4AD" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="0.16em">BLACKBOT</text>
+  <text x="474" y="268" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="34" font-weight="700">flight recorder</text>
+  <text x="474" y="302" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">Recording and reliability layer for</text>
+  <text x="474" y="326" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">robots and connected machines.</text>
+
+  <rect x="444" y="344" width="252" height="76" rx="20" fill="#101417"/>
+  <text x="474" y="372" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="0.14em">1</text>
+  <text x="494" y="372" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700">collect state &amp; events</text>
+  <text x="494" y="396" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15">health, faults, operator actions,</text>
+  <text x="494" y="416" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15">and linked captures</text>
+
+  <rect x="444" y="436" width="252" height="76" rx="20" fill="#101417"/>
+  <text x="474" y="464" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="0.14em">2</text>
+  <text x="494" y="464" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700">group what matters</text>
+  <text x="494" y="488" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15">turn raw activity into operator-ready</text>
+  <text x="494" y="508" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15">incidents and records</text>
+
+  <rect x="444" y="528" width="252" height="76" rx="20" fill="#101417"/>
+  <text x="474" y="556" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="0.14em">3</text>
+  <text x="494" y="556" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700">keep the trail intact</text>
+  <text x="494" y="580" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15">timeline, recordings, and machine</text>
+  <text x="494" y="600" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15">context stay together</text>
+
+  <path d="M768 382H826" stroke="#ED7A20" stroke-width="4" stroke-linecap="round"/>
+  <path d="M768 474H826" stroke="#4A5661" stroke-width="4" stroke-linecap="round"/>
+  <path d="M768 566H826" stroke="#0098D2" stroke-width="4" stroke-linecap="round"/>
+  <path d="M826 382L816 376V388L826 382Z" fill="#ED7A20"/>
+  <path d="M826 474L816 468V480L826 474Z" fill="#4A5661"/>
+  <path d="M826 566L816 560V572L826 566Z" fill="#0098D2"/>
+
+  <rect x="846" y="214" width="258" height="112" rx="24" fill="#15191D" stroke="#232A31" stroke-width="2"/>
+  <text x="878" y="254" fill="#9BA4AD" font-family="IBM Plex Sans, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="0.16em">OUTPUT</text>
+  <text x="878" y="290" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700">incidents</text>
+  <text x="878" y="314" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15">Queue, severity, status, and</text>
+  <text x="878" y="334" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15">selected incident summary.</text>
+
+  <rect x="846" y="354" width="258" height="112" rx="24" fill="#15191D" stroke="#232A31" stroke-width="2"/>
+  <text x="878" y="430" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700">recordings</text>
+  <text x="878" y="454" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15">Ready captures, retry state,</text>
+  <text x="878" y="474" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15">and links back to incidents.</text>
+
+  <rect x="846" y="494" width="258" height="112" rx="24" fill="#15191D" stroke="#232A31" stroke-width="2"/>
+  <text x="878" y="570" fill="white" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700">incident detail</text>
+  <text x="878" y="594" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15">Timeline, linked recordings, and</text>
+  <text x="878" y="614" fill="#8E979F" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15">machine context in one view.</text>
 </svg>
