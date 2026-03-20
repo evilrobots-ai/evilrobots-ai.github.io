@@ -10,6 +10,6 @@ hero_primary_url: "/blackbot/"
 hero_secondary_label: "see work"
 hero_secondary_url: "/work/"
 hero_media: "/images/autonomy-arc.svg"
-hero_media_alt: "Placeholder systems diagram showing machines feeding incident, recording, and change data into blackbot."
-hero_note: "Placeholder systems graphic, to be updated with product and engineering material."
+hero_media_alt: "blackbot flight recorder systems diagram showing machines feeding incident."
+hero_note: "blackbot flight recorder systems graphic."
 ---
